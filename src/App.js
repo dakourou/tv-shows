@@ -1,7 +1,7 @@
 import "./App.css";
 import HomePage from "../src/pages/homePage/HomePage.component";
-import ShowDetails from "../src/components/showDetails/ShowDetails.component";
-import SearchResults from "./pages/searchResults/SearchResults.component";
+import ShowDetails from "../src/pages/showDetails/ShowDetails.component";
+import SearchResults from "../src/pages/searchResults/SearchResults.component";
 import Header from "../src/components/header/Header.component";
 import Favorites from "../src/pages/favorites/Favorites.component";
 import Footer from "../src/components/footer/Footer.component";
