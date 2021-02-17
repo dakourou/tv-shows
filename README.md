@@ -7,6 +7,7 @@ Application with TV Shows in React JS
 * Clone this repo
 * Inside the project folder tv-shows run npm i
 * Run npm start 
+* In order to run the tests: run npm test
 
 ## App Details
 The App consists of a Home Page in which the user can see at the banner a carousel of some featured shows and below a list with 6 categories and the top rated shows of them.
@@ -25,4 +26,4 @@ It is a library that uses the Virtual DOM, which is important for our project as
 Also the components logic is useful, because in the project there are many reusable components for different pages. 
 Also using Redux for the state management is very convenient for storing all the states and updating them.
 
-I also included some unit tests for the reducers used in the app.
+I also included some unit tests for the reducers used in the app. I used jest-dom and react-scripts test.
