@@ -1,0 +1,16 @@
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.tile {
+  height: 300;
+  transition: transform 600ms;
+  text-align: center;
+}
+
+.tile:hover {
+  transform: scale(1.2);
+}
