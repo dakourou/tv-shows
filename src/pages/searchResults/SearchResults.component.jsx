@@ -6,6 +6,7 @@ import "../../assets/styles/list.styles.css";
 import { useHistory } from "react-router-dom";
 import ResultsList from "../../components/searchResults/ResultsList.component";
 import { SearchResultsStyles } from "../../assets/styles/searchresults.styles";
+import { Typography } from "@material-ui/core";
 
 function SearchResults(props) {
   const history = useHistory();
@@ -31,12 +32,25 @@ function SearchResults(props) {
     }
   }, [props.queryTerm]);
   return (
-    //search results page: he user is redirected there when a change at the search bar input is detected
+    //search results page: the user is redirected there when a change at the search bar input is detected
     <div className={classes.root}>
-      <ResultsList
+      {props.searchResults.length>0 ? (<ResultsList
         page="searchResults"
         carouselImages={props.searchResults}
-      ></ResultsList>
+      ></ResultsList>) : 
+      (<div
+        style={{
+          marginTop: 60,
+          paddingBottom: 500,
+          width: "100%",
+          textAlign: "center",
+        }}
+      >
+        <Typography variant="h6" noWrap style={{ color: "white" }}>
+          {" "}
+          No Results Found
+        </Typography>
+      </div>)}
     </div>
   );
 }
