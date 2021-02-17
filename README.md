@@ -19,7 +19,7 @@ After clicking on a show the user is navigated to the Show Details page where th
 
 The user can view their Favorites list by clicking the button next to their search bar. From there they can view more details about each show or remove it from their list.
 
-##Project Info
+## Project Info
 For this project I used React JS as it is a library that I've been working on in the past few months and I am more familiar with. 
 It is a library that uses the Virtual DOM, which is important for our project as we want it to be fast whenever there is an update. 
 Also the components logic is useful, because in the project there are many reusable components for different pages. 
